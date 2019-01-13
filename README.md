@@ -1,7 +1,13 @@
 Pdfc --  PDF Compressor
 =======================
 
-Simple python script to compress PDF.
+Original Author: Sylvain Carlioz, 6/03/2017
+
+Simple python wrapper script to use ghoscript function to compress PDF files.
+With this class you can compress and or fix a folder with (corrupt) PDF files.
+
+You can also use this class within your own scripts just do a
+import CompressPDF
 
 Installation
 -------------
@@ -16,18 +22,20 @@ On MacOSX:
 
 Usage
 -----
-`pdfc [-o output_file_path] [-c number] input_file_path`
+`pdfc [-sf startFolder] [-cl compressLevel] [-s showInfo]`
 
 Ex:
-`pdfc -o out.pdf in.pdf`
+`pdfc -sf /User/Me/PDF-Files/ -cd 2 -s 1`
 
-Output:
+Output Example:
 ```
 Compress PDF...
 Compression by 65%.
 Final file size is 1.4MB
 Done.
 ```
+
+
 
 Options
 -------
